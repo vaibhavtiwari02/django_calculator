@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="main_head">
+        <h1>Calculator</h1>
+    </div>
+    <div class="cal">
+        <form method="POST">
+            {% csrf_token %}
+            <label for="number1">enter number-1</label>
+            <input type="text" name="num1" class="txt">
+            <br>
+
+            <label for="number1">enter number-2</label>
+            <input type="text" name="num2" class="txt">
+            <br>
+            <label for="options">Select the type of operation</label>
+            <select name="opr">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+
+            </select>
+            <br>
+            <button type="submit">Calculate</button>
+            <input type="text" value="{{c}}">
+
+        </form>
+    </div>
+    <br>
+    
+
+    </div>
+
+
+</body>
+
+</html>
